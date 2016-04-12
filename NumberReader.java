@@ -5,22 +5,22 @@
 public class NumberReader {
 
     //Using: 
-    //String _rs1 = Number2TextConverter(123); // YüzYirmiÜç
-    //String _rs2 = Number2TL_Converter(123.45); // YüzYirmiÜç TL KýrkBeþ Krþ
+    //String _rs1 = Number2TextConverter(123); // YÃ¼zYirmiÃœÃ§
+    //String _rs2 = Number2TL_Converter(123.45); // YÃ¼zYirmiÃœÃ§ TL KÄ±rkBeÅŸ KrÅŸ
     
-    private final String krs_ = " Krþ";
+    private final String krs_ = " KrÅŸ";
     private final String tl_ = " TL";
 
     //String[10][2]
     private final String[][] Text1 = new String[][]{
         {"", ""},
         {"Bir", "On"},
-        {"Ýki", "Yirmi"},
-        {"Üç", "Otuz"},
-        {"Dört", "Kýrk"},
-        {"Beþ", "Elli"},
-        {"Altý", "Altmýþ"},
-        {"Yedi", "Yetmiþ"},
+        {"Ä°ki", "Yirmi"},
+        {"ÃœÃ§", "Otuz"},
+        {"DÃ¶rt", "KÄ±rk"},
+        {"BeÅŸ", "Elli"},
+        {"AltÄ±", "AltmÄ±ÅŸ"},
+        {"Yedi", "YetmiÅŸ"},
         {"Sekiz", "Seksen"},
         {"Dokuz", "Doksan"}
     };
@@ -49,9 +49,9 @@ public class NumberReader {
         }
 
         if (P > 1) {
-            part3 = Text1[P][0] + "Yüz";
+            part3 = Text1[P][0] + "YÃ¼z";
         } else if (P == 1) {
-            part3 = "Yüz";
+            part3 = "YÃ¼z";
         } else {
             part3 = "";
         }
